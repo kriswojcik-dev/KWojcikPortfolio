@@ -7,4 +7,4 @@ The HTML is semantic and validated.
 The CSS is not responsive. 
 There is no Javascript.  
 
-
+https://kriswojcik-dev.github.io/KWojcikPortfolio/
