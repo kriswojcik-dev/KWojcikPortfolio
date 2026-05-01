@@ -1,14 +1,46 @@
 /* CSS by Kristin Wojcik */
-/* Color Pallet
-Green Thumb: #669900
-Lizard Belly: #CCCC33
-Pastel Peach Orange: #FFCC99
-Poisonous Apple: #993333 
-Concrete: #F2F2F2
+
+/* Color Palette
+Primary Pink: #F23568
+Light Pink: #F2C2CF
+Mid Pink: #F285AD
+Teal: #04BFBF
+Mint: #04D9B2
 */
 
-/* GLOBAL (base) MOBILE FIRST */
-body {
-    background-color: #F2F2F2;
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2C2CF;
+    color: #222;
+}
+
+header {
+    background-color: #F23568;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #F285AD;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #04BFBF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
