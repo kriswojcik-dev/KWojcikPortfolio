@@ -1,10 +1,70 @@
-# KWojcikPortfolio
-My First Portfolio
-Website for my first Portfolio for class GIT215
-Includes webpages for About, Resume, Projects and Contact.
+# Kristin Wojcik Portfolio
 
-The HTML is semantic and validated. 
-The CSS is not responsive. 
-There is no Javascript.  
+This is my personal portfolio website, built to showcase my web development projects, technical skills, and professional experience.
 
-https://kriswojcik-dev.github.io/KWojcikPortfolio/
+## 🔗 Live Site
+[View Portfolio](https://kriswojcik-dev.github.io/KWojcikPortfolio/)
+
+## 📂 Repository
+[GitHub Repository](https://github.com/kriswojcik-dev/KWojcikPortfolio)
+
+---
+
+## 💡 About This Project
+
+This portfolio was designed and developed as part of my coursework in class GIT215. It highlights my ability to build responsive, user-friendly websites using modern front-end practices.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Flexbox
+- Responsive Design (Mobile-First)
+- GitHub Desktop
+- Visual Studio Code
+
+---
+
+## 📸 Features
+
+- Responsive layout for mobile and desktop
+- Navigation with active page highlighting
+- Project card layout with images and descriptions
+- Interactive buttons with hover and click effects
+- Clean, consistent design system
+
+---
+
+## 📁 Project Structure
+
+
+/portfolio
+│── index.html
+│── about.html
+│── projects.html
+│── resume.html
+│── contact.html
+│── styles.css
+│── /images
+
+
+---
+
+## 🚀 Future Improvements
+
+- Add additional projects
+- Include JavaScript interactivity
+- Improve accessibility features
+- Enhance visual design and animations
+
+---
+
+## 📬 Contact
+
+- Email: twistofadoration@gmail.com
+- LinkedIn: https://www.linkedin.com/in/kristin-wojcik
+- GitHub: https://github.com/kriswojcik-dev
+
+---

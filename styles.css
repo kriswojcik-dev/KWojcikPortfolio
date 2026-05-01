@@ -20,6 +20,15 @@ body {
     color: #222;
 }
 
+/* TYPOGRAPHY */
+h1 {
+    font-family: "Libre Barcode 128 Text", cursive;
+    color: #04D9B2;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0 #222;
+}
+
 header {
     background-color: #F23568;
     color: white;
@@ -43,4 +52,218 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+/* NAV*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV LAYOUT (mobile-first) */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* NAV BUTTONS */
+nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #04D9B2;
+    color: #222;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+    box-shadow: 0 4px 0 #04BFBF;
+}
+
+nav a:hover {
+    background-color: #04BFBF;
+    color: white;
+    transform: translateY(-2px);
+}
+
+nav a:active {
+    background-color: #F23568;
+    color: white;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #A61E4D;
+}
+
+nav a.active {
+    background-color: #F23568;
+    color: white;
+    box-shadow: 0 4px 0 #A61E4D;
+}
+
+nav a.active:hover {
+    background-color: #F23568;
+    color: white;
+    transform: none;
+}
+
+/* HOME SECTION */
+.home {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.home h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.home p {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.home-buttons a {
+    text-decoration: none;
+    background-color: #04D9B2;
+    color: #222;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #04BFBF;
+    transition: 0.2s;
+}
+
+.home-buttons a:hover {
+    background-color: #04BFBF;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* PROJECT PAGE */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.project-card h2 {
+    margin-top: 0.5rem;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    background-color: #FFE4EC;
+    border: 3px solid #F23568;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 4px 4px 0 #04BFBF;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #F2C2CF;
+    border-radius: 8px;
+}
+
+.project-card p {
+    flex-grow: 1;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-links a {
+    flex: 1;
+    text-decoration: none;
+    background-color: #04D9B2;
+    color: #222;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 3px 0 #04BFBF;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.project-links a:hover {
+    background-color: #04BFBF;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.project-links a:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #04BFBF;
+}
+
+
+
+/* MEDIA QUERY: larger screens */
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+    }
+
+    header,
+    nav,
+    footer {
+        grid-column: 1 / -1;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .home-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .home-buttons a {
+        width: 200px;
+    }
+
+    .project-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-card {
+        min-width: 250px;
+    }
 }

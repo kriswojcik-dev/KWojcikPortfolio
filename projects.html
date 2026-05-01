@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Projects</title>
 </head>
@@ -16,32 +19,40 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            <h2>First Project: Managing Anxiety Website</h2>
-            <p>This project involved creating a website to help people manage their anxiety through various techniques
-                and resources.
-                The website included resources for activities, breathing exercises, calming sounds, and a resource
-                library. It also included a notes section for users to leave notes of encouragement to others.
-            </p>
+    <main class="project-grid">
+        <section class="project-card">
+            <h2>Managing Anxiety Website</h2>
+            <img src="images/anxiety.png" alt="Managing Anxiety website screenshot">
+            <p>A responsive wellness website designed to help users manage anxiety through breathing exercises, calming
+                sounds, activity ideas, and supportive notes.</p>
+            <p><strong>Skills used:</strong> HTML, CSS, JavaScript, responsive design, accessibility</p>
+            <div class="project-links">
+                <a href="https://kriswojcik-dev.github.io/ManagingAnxiety/" target="_blank">View Project</a>
+                <a href="https://github.com/kriswojcik-dev/ManagingAnxiety" target="_blank">GitHub</a>
+            </div>
+
         </section>
-        <section>
-            <h2>Second Project: Vogel Timepiece</h2>
-            <p>This project involved creating a mockup of a watchmaker's storefront website for Gustav Vogel. The mockup
-                included an example of the website's layout and design.
-            </p>
+        <section class="project-card">
+            <h2>Vogel Timepiece</h2>
+            <img src="images/VogelTimpiece.png" alt="Vogel Timepiece website screenshot">
+            <p>A mock storefront website for a fictional watchmaker, focused on layout design, branding, and navigation
+                structure.</p>
+            <p><strong>Skills used:</strong> HTML, CSS, layout design</p>
+            <div class="project-links">
+                <a href="https://drive.google.com/drive/folders/1y7AZnZ0hvp2A3AjqUP-rcoLFlKbs7Qmw?usp=sharing"
+                    target="_blank">View Mockup in Google Drive</a>
+                <a href="#">No Source Code Available</a>
+            </div>
         </section>
-        <section>
-            <h2>Third Project:</h2>
-            <p></p>
+        <section class="project-card">
+            <h2>Coming Soon</h2>
+            <p>This section will feature an upcoming web development project.</p>
         </section>
-        <div> Link to my GitHub profile <a href="https://github.com/kriswojcik-dev" target="_blank">here</a>.</div>
-        <div> Link to my CodePen <a href="https://codepen.io/Kristin-Wojcik" target="_blank">here</a>.</div>
     </main>
     <footer>
         <p>Built by Kristin Wojcik. 2026</p>
