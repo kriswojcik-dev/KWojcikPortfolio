@@ -43,6 +43,66 @@ main section {
     margin-bottom: 1.5rem;
 }
 
+.contact-page {
+    max-width: 1200px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.contact-grid section {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #04BFBF;
+}
+
+.contact-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(4, 191, 191, 0.08), rgba(242, 53, 104, 0.08));
+    pointer-events: none;
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 0.75rem;
+    border-radius: 50%;
+    background-color: #F23568;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 0 #A61E4D;
+}
+
+.contact-grid section p {
+    margin-bottom: 0;
+}
+
 .resume-page {
     max-width: 1100px;
 }
@@ -383,6 +443,14 @@ h2 {
     .project-card {
         flex: 1 1 350px;
         min-width: 300px;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contact-grid section {
+        min-height: 220px;
     }
 
     .resume-grid {
